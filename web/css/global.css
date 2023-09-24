@@ -16,3 +16,10 @@ body {
         height: 100vh;
     }
 }
+
+.mission-vision {
+    width: 377.41px;
+    height: 200px;
+    background: black;
+    margin: 0 auto;
+}
