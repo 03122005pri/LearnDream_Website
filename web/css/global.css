@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* This is the global stylesheet for the entire website */
+/* To add new font please see the fonts.css file */
 
 body {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .logo {
@@ -13,96 +18,46 @@ body {
     user-select: none;
 }
 
+.text-accent {
+    color: #57AEFF;
+}
+
 @media screen and (max-width: 992px) {
     .navbar-collapse {
         height: 100vh;
     }
 }
 
-div {
-    width: 1245px;
+.carousel-indicator {
+    transform: scaleX(0.4) scaleY(4);
+    border-radius: 100%;
 }
 
-.mission-vision {
-    height: 100%;
-    width: 1245px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-top: 78px;
+.review {
+    width: 50%;
+    height: auto;
+    border: 2px solid #000;
+    -webkit-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 47px -8px rgba(0, 0, 0, 0.75);
 }
 
-.subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #57AEFF;
-    margin: 0 auto;
-    margin-top: 100px;
-    text-align: center;
+.bold {
+    font-weight: 800;
 }
 
-.mission-vision .subtitle {
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 50px;
-    text-align: left;
-}
-
-.text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    letter-spacing: 0em;
-    margin-top: 11px;
-    margin-bottom: 0px;
-}
-
-.do_shkoly {
-    font-weight: 500;
-    color: black;
-}
-
-.vstup_rectangle {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 118px;
-    background: linear-gradient(90deg, #57aeff 40%, rgb(9, 50, 114) 130%);
-}
-
-.image {
-    height: 100px;
-    width: 100px;
-    margin-left: 28px;
-}
-
-.vstup_rectangle .text {
-    color: white;
-    font-size: 32px;
-    font-family: Montserrat;
-    font-weight: 600;
+.dropdown-menu {
+    border-radius: 0%;
+    border: 1px solid #000;
+    padding: 0;
     margin: 0;
-    margin-left: 59px;
 }
 
-.fill_form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 57px;
-    color: black;
-    font-size: 20px;
-    font-family: Montserrat;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: 169px;
+.dropdown-item {
+    border-top: 1px solid #000;
+}
+
+.dropdown-item:hover {
+    background-color: #57AEFF;
+    color: #fff;
 }
